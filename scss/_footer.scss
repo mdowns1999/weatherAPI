@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(113, 113, 113);
+  font-size: 18px;
+
+  a {
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+
+    &:hover {
+      color: darkblue;
+    }
+  }
+}

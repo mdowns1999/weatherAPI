@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/final.css">
-    <title>Final Project:</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>5 Day Forecast API</title>
+  </head>
+  <body>
     <header>
-        <h1>5-Day Weather Forecast</h1>
+      <h1>5-Day Weather Forecast</h1>
     </header>
-            <!-- <p id="selection">Select</p> -->
-            <!-- <select name="city_dropdown" onchange="add_temple(this.value);"></select> -->
     <main>
-        <div id="selection_area"> 
-            
-            <h1 id="cityHeader"></h1> 
-            
-            <select id="city_dropdown" onchange="update();">>
-                <option value="0">Rexburg</option>    
-                <option value= "1" >Logan</option>
-                <option value="2">Tacoma</option>         
-                </select>
+      <div id="selection_area">
+        <h1 id="cityHeader"></h1>
 
-        </div>
+        <label
+          ><select id="city_dropdown" onchange="update();">
+            >
+            <option value="0">Rexburg</option>
+            <option value="1">Logan</option>
+            <option value="2">Tacoma</option>
+          </select></label
+        >
+      </div>
 
-        <div id="forecast_box"></div>
-
-
-        <div id="day_forecast"></div>
-        
+      <div id="forecast_box"></div>
     </main>
 
     <footer>
-        <p>&copy;<span id="year"></span> | Mike Downs | WDD 330</p>
-        <p><a href="https://openweathermap.org/api" target="_blank">Data from Weather API</a></p>
+      <p>&copy;<span id="year"></span> | Mike Downs</p>
+      <p>
+        <a href="https://openweathermap.org/api" target="_blank"
+          >Data from Weather API</a
+        >
+      </p>
     </footer>
 
-    <script src="js/select.js" type="text/javascript"></script>
-    <script src="js/final.js" type="module"></script>
-
-</body>
+    <script src="js/weather.js" type="text/javascript"></script>
+    <script src="js/footer.js" type="module"></script>
+  </body>
 </html>

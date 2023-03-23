@@ -1,0 +1,49 @@
+#forecast_box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+  text-align: center;
+}
+
+.day_box {
+  background-color: rgb(84, 116, 246);
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  color: rgb(240, 240, 240);
+
+  h3 {
+    margin: 0 25px;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  #forecast_box {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    //gap:10px;
+  }
+
+  .day_box {
+    flex-direction: column;
+    height: 400px;
+    width: 125px;
+    margin: 15px auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 18px;
+    p {
+      font-size: 25px;
+    }
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .fiveDayIcon {
+    width: 110px;
+    justify-content: center;
+  }
+}

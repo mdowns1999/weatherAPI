@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Work+Sans&display=swap");
+header,
+footer,
+h1,
+h2,
+h3,
+p,
+ul,
+li div {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(168, 168, 168);
+  border-radius: 0px 0px 5px 5px;
+}
+
+header,
+footer,
+h1,
+h2,
+h3 {
+  font-family: "Work Sans", sans-serif;
+}
+
+header,
+main,
+footer {
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+
+body {
+  background-image: url("../images/backgroundImg.jpg");
+  background-attachment: fixed;
+}
+
+header {
+  border: 2px solid rgb(168, 168, 168);
+  margin-bottom: -18px;
+  border-radius: 5px 5px 0 0;
+}
+header h1 {
+  text-align: center;
+  padding: 10px;
+  background-color: #1d1dce;
+  color: rgb(230, 230, 230);
+  border-radius: 4px 4px 0 0;
+}
+
+#selection_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 25px 0;
+}
+
+#city_dropdown {
+  padding: 8px;
+  width: 325px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#forecast_box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+  text-align: center;
+}
+
+.day_box {
+  background-color: rgb(84, 116, 246);
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  color: rgb(240, 240, 240);
+}
+.day_box h3 {
+  margin: 0 25px;
+}
+
+@media screen and (min-width: 860px) {
+  #forecast_box {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .day_box {
+    flex-direction: column;
+    height: 400px;
+    width: 125px;
+    margin: 15px auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 18px;
+  }
+  .day_box p {
+    font-size: 25px;
+  }
+  .day_box h3 {
+    margin: 0;
+  }
+  .fiveDayIcon {
+    width: 110px;
+    justify-content: center;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(113, 113, 113);
+  font-size: 18px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(113, 113, 113);
+}
+footer a:hover {
+  color: darkblue;
+}
+
+/*# sourceMappingURL=styles.css.map */
