@@ -35,6 +35,7 @@ footer {
 }
 
 body {
+  background-color: rgb(212, 225, 254);
   background-image: url("../images/backgroundImg.jpg");
   background-attachment: fixed;
 }
@@ -76,7 +77,8 @@ header h1 {
 }
 
 .day_box {
-  background-color: rgb(84, 116, 246);
+  background-color: rgba(75, 110, 251, 0.61);
+  backdrop-filter: blur(100px);
   padding: 25px;
   display: flex;
   flex-wrap: wrap;
