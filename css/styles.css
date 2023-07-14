@@ -64,11 +64,16 @@ header h1 {
 
 #city_dropdown {
   padding: 8px;
-  width: 325px;
+  width: 275px;
   text-align: center;
   font-size: 18px;
 }
 
+@media screen and (min-width: 860px) {
+  #city_dropdown {
+    width: 325px;
+  }
+}
 #forecast_box {
   display: grid;
   grid-template-columns: 1fr;
@@ -89,28 +94,31 @@ header h1 {
 .day_box h3 {
   margin: 0 25px;
 }
+.day_box p {
+  font-size: 18px;
+}
 
 @media screen and (min-width: 860px) {
   #forecast_box {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px;
   }
   .day_box {
     flex-direction: column;
     height: 400px;
-    width: 175px;
-    margin: 15px auto;
+    margin: 10px;
     border: 1px solid grey;
     border-radius: 10px;
     padding: 18px;
   }
   .day_box p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .day_box h3 {
     margin: 0;
   }
   .fiveDayIcon {
-    width: 110px;
+    width: 100%;
     justify-content: center;
   }
 }

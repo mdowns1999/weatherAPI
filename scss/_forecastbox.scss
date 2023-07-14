@@ -19,24 +19,29 @@ backdrop-filter: blur(100px);
   h3 {
     margin: 0 25px;
   }
+
+  p{
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 860px) {
   #forecast_box {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin:10px;
     //gap:10px;
   }
 
   .day_box {
     flex-direction: column;
     height: 400px;
-    width: 175px;
-    margin: 15px auto;
+    //width: 175px;
+    margin: 10px;
     border: 1px solid grey;
     border-radius: 10px;
     padding: 18px;
     p {
-      font-size: 25px;
+      font-size: 20px;
     }
 
     h3 {
@@ -45,7 +50,7 @@ backdrop-filter: blur(100px);
   }
 
   .fiveDayIcon {
-    width: 110px;
+    width: 100%;
     justify-content: center;
   }
 }
