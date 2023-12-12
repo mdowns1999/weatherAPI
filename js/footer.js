@@ -12,4 +12,3 @@ function footer_date() {
 }
 
 footer_date();
-

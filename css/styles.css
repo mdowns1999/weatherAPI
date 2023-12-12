@@ -13,7 +13,7 @@ li div {
 
 main {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   background-color: transparent;
   border: 2px solid rgb(168, 168, 168);
   border-radius: 0px 0px 5px 5px;
@@ -86,7 +86,8 @@ header h1 {
   backdrop-filter: blur(100px);
   padding: 25px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   gap: 10px;
   color: rgb(240, 240, 240);
@@ -98,13 +99,39 @@ header h1 {
   font-size: 18px;
 }
 
+.fiveDayIcon {
+  width: 50%;
+}
+
+@media screen and (min-width: 425px) {
+  .day_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .day_box .highLow {
+    grid-column: 1/4;
+  }
+}
+@media screen and (min-width: 550px) {
+  .day_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fiveDayIcon {
+    width: 10%;
+  }
+}
 @media screen and (min-width: 860px) {
   #forecast_box {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 10px;
   }
   .day_box {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     height: 400px;
     margin: 10px;
     border: 1px solid grey;
@@ -118,7 +145,7 @@ header h1 {
     margin: 0;
   }
   .fiveDayIcon {
-    width: 100%;
+    width: 80%;
     justify-content: center;
   }
 }
