@@ -7,6 +7,3 @@ Welcome to my Weather API!  This program is a website that practices using a wea
 # Development Environment
 
 The environment that was used was Visual Studio Code by Microsoft.  The languages used were HTML, CSS, and Javascript.  I did also use a little bit of SASS.  If you want to make any changes to the CSS file, make sure to recompile the SASS with the command at the top of the styles.scss file.  Note, that you should also make sure you have SASS.
-
-# Future Work
-* Replace the images found with the API with custom images
